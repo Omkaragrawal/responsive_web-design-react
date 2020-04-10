@@ -5,7 +5,7 @@ $background-light: #9575CD;
 $background-pale: #D1C4E9;
 
 // Height variables
-$carousel-item-height: 300px;
+$carousel-item-height: 300px;;
 
 // SCSS Mixins
 
@@ -14,7 +14,20 @@ $carousel-item-height: 300px;
 	padding: $pad-up-dn $pad-left-right;
 }
 
+
 // Use of variables and mixins
+
+.modal-header{
+    background: $background-dark;
+    color: floralwhite;
+    .close{
+        color: floralwhite;
+    }
+}
+
+.modal-body {
+    background: $background-pale;
+}
 
 .row-header{
     @include zero-margin(0px,0px);
@@ -33,7 +46,7 @@ $carousel-item-height: 300px;
 
 .jumbotron {
     @include zero-margin(70px,30px);
-    background: $background-light ;
+    background: $background-light !important ;
     color:floralwhite;
 }
 
@@ -58,6 +71,7 @@ body{
     border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
+
 
 // Nested Selectors
 

@@ -16,5 +16,7 @@
     "url": "https://github.com/Omkaragrawal/responsive_web-design-react/issues"
   },
   "homepage": "https://github.com/Omkaragrawal/responsive_web-design-react#readme",
-  "dependencies": {}
+  "dependencies": {
+    "less": "^3.11.1"
+  }
 }

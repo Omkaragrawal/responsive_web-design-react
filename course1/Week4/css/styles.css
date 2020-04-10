@@ -1,3 +1,12 @@
+.modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+  .modal-header .close {
+    color: floralwhite; }
+
+.modal-body {
+  background: #D1C4E9; }
+
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
@@ -16,7 +25,7 @@
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #9575CD;
+  background: #9575CD !important;
   color: floralwhite; }
 
 address {
