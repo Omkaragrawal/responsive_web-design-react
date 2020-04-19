@@ -49,7 +49,12 @@ export default class DishDetail extends Component {
                     <h4>{comment.comment}</h4>
                   </div>
                   <div className="col-12">
-                    -- {`${comment.author}, ${new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}`}
+                    --{" "}
+                    {`${comment.author}, ${new Intl.DateTimeFormat("en-US", {
+                      year: "numeric",
+                      month: "short",
+                      day: "2-digit",
+                    }).format(new Date(Date.parse(comment.date)))}`}
                   </div>
                 </div>
                 <br />
@@ -60,18 +65,18 @@ export default class DishDetail extends Component {
         </ul>
       );
     } else {
-      return (<div></div>);
+      return <div></div>;
     }
   }
 
   render() {
     //   console.log(this.state.dishDetails);
-    if(this.props.dish) {
-    return (
-      <div className="container">
-      <div className="row">
-        <div className="col-12 col-md-5 m-1">
-          {/* <Card>
+    if (this.props.dish) {
+      return (
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-5 m-1">
+              {/* <Card>
                    <CardImg
                      top
                      src={this.props.dish.image}
@@ -87,16 +92,16 @@ export default class DishDetail extends Component {
                    </CardBody>
                  </Card> */}
 
-          {this.renderDish(this.props.dish)}
+              {this.renderDish(this.props.dish)}
+            </div>
+            <div className="col-12 col-md-5 m-1">
+              {this.renderComments(this.props.dish.comments)}
+            </div>
+          </div>
         </div>
-        <div className="col-12 col-md-5 m-1">
-          {this.renderComments(this.props.dish.comments)}
-        </div>
-      </div>
-      </div>
-    );
-                } else {
-                  return(<div></div>)
-                }
+      );
+    } else {
+      return <div></div>;
+    }
   }
 }
