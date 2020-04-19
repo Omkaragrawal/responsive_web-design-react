@@ -40,10 +40,10 @@ export class DishDetail extends Component {
   renderComments(comments) {
     if (comments) {
       return (
-        <ul>
+        < ul className = "list-unstyled" >
           {comments.map((comment) => {
             return (
-              <li className="list-unstyled" key={comment.id}>
+              <li key={comment.id}>
                 <div className="row">
                   <div className="col-12">
                     <h4>{comment.comment}</h4>
