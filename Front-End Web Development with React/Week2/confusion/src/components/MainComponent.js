@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Header from "./HeaderComponent";
 import Home from './HomeComponent';
 import Menu from "./MenuComponent";
-import DishDetail from "./DishdetailComponent";
+// import DishDetail from "./DishdetailComponent";
 import Footer from "./FooterComponent";
 import { DISHES } from "../shared/dishes";
 
