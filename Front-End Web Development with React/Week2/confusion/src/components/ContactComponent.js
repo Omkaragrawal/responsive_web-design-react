@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     Breadcrumb,
     BreadcrumbItem,
-    Button,
+    // Button,
     Form,
     FormGroup,
     Label,
@@ -85,7 +85,7 @@ class Contact extends Component {
         if (this.state.touched.telnum && !reg.test(telnum))
             errors.telnum = 'Please check the telephone number again. It seems incorrect.';
         // copied from https://regex101.com/r/6b5H9G/
-        const regEmail = /^[a-z,A-Z,0-9,-,_,.]+@[a-z,A-Z]+\.[a-z,A-Z]{2,3}$/
+        const regEmail = /^[a-z,A-Z,0-9,-,_,.]+@[a-z,A-Z]+\.[a-z,A-Z]{1,2}$/
         if (this.state.touched.email && regEmail.test(email))
             errors.email = 'Please check the email address again. It seems incorrect.';
 
