@@ -151,7 +151,11 @@ function RenderDish({ dish }) {
   }
 }
 
-function RenderComments({ comments }) {
+function RenderComments({
+  comments,
+  addComment,
+  dishId
+}) {
   if (comments) {
     return (
       <React.Fragment>
@@ -178,7 +182,7 @@ function RenderComments({ comments }) {
             );
           })}
         </ul>
-        <CommentForm></CommentForm>
+        <CommentForm dishId={dishId} addComment={addComment}></CommentForm >
       </React.Fragment>
     );
   } else {
@@ -206,7 +210,7 @@ const DishDetail = (props) => {
             <RenderDish dish={props.dish} />
           </div>
           <div className="col-12 col-md-5 m-1">
-            <RenderComments comments={props.comments} />
+            < RenderComments comments = {props.comments} addComment = {props.addComment} dishId = {props.dish.id}/>
           </div>
         </div>
       </div>
@@ -243,6 +247,7 @@ class CommentForm extends Component {
     this.toggleModal();
     console.log('Current State is: ' + JSON.stringify(values));
     alert('Current State is: ' + JSON.stringify(values));
+    this.props.addComment(this.props.dishId, values.rating, values.username, values.message);
     event.preventDefault();
   }
   RenderModal() {
