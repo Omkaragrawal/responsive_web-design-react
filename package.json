@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Omkaragrawal/responsive_web-design-react#readme",
   "dependencies": {
     "bootstrap-social": "^5.1.1",
+    "json-server": "^0.16.1",
     "less": "^3.11.1"
   }
 }
