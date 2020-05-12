@@ -1,6 +1,6 @@
-import {
-    PROMOTIONS
-} from '../shared/promotions';
+// import {
+//     PROMOTIONS
+// } from '../shared/promotions';
 
 import * as ActionTypes from './ActionTypes';
 

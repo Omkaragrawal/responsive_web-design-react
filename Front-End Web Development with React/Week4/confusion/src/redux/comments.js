@@ -1,6 +1,6 @@
-import {
-    COMMENTS
-} from '../shared/comments';
+// import {
+//     COMMENTS
+// } from '../shared/comments';
 
 import * as ActionTypes from './ActionTypes';
 

@@ -153,11 +153,7 @@ function RenderDish({ dish }) {
   }
 }
 
-function RenderComments({
-  comments,
-  addComment,
-  dishId
-}) {
+function RenderComments({ comments, postComment, dishId }) {
   if (comments) {
     return (
       <React.Fragment>
@@ -184,7 +180,7 @@ function RenderComments({
             );
           })}
         </ul>
-        <CommentForm dishId={dishId} addComment={addComment}></CommentForm >
+        <CommentForm dishId={dishId} postComment={postComment} />
       </React.Fragment>
     );
   } else {
@@ -228,7 +224,7 @@ const DishDetail = (props) => {
             <RenderDish dish={props.dish} />
           </div>
           <div className="col-12 col-md-5 m-1">
-            < RenderComments comments = {props.comments} addComment = {props.addComment} dishId = {props.dish.id}/>
+            < RenderComments comments={props.comments} postComment={props.postComment} dishId = {props.dish.id}/>
           </div>
         </div>
       </div>
@@ -265,7 +261,7 @@ class CommentForm extends Component {
     this.toggleModal();
     console.log('Current State is: ' + JSON.stringify(values));
     alert('Current State is: ' + JSON.stringify(values));
-    this.props.addComment(this.props.dishId, values.rating, values.username, values.message);
+    this.props.postComment(this.props.dishId, values.rating, values.username, values.message);
     event.preventDefault();
   }
   RenderModal() {
@@ -295,7 +291,7 @@ class CommentForm extends Component {
               </Col>
             </Row>
             <Row className="form-group" id="username-row">
-              <Label xs={2} htmlFor="userName">Your Name</Label>
+              <Label xs={2} htmlFor="username">Your Name</Label>
               <Col xs={10}>
                 <Control.text className="form-control"
                   placeholder="Your complete name"
