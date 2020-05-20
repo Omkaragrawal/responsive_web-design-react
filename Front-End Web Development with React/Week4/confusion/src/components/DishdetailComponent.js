@@ -32,6 +32,9 @@ import {
 } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
+
+
 // export default class DishDetail extends Component {
 //   constructor(props) {
 //     super(props);
@@ -140,6 +143,11 @@ import { baseUrl } from '../shared/baseUrl';
 function RenderDish({ dish }) {
   if (dish) {
     return (
+      <FadeTransform
+        in
+        transformProps={{
+          exitTransform: 'scale(0.5) translateY(-50%)'
+        }}>
       <Card>
         <CardImg top src={baseUrl + dish.image} alt={dish.name} />
         <CardBody>
@@ -147,6 +155,7 @@ function RenderDish({ dish }) {
           <CardText> {dish.description} </CardText>
         </CardBody>
       </Card>
+      </FadeTransform>
     );
   } else {
     return (<div></div>);
@@ -158,8 +167,10 @@ function RenderComments({ comments, postComment, dishId }) {
     return (
       <React.Fragment>
         <ul>
-          {comments.map((comment) => {
-            return (
+          <Stagger in>
+            {comments.map((comment) => {
+              return (
+                <Fade in>
               <li className="list-unstyled" key={comment.id}>
                 <div className="row">
                   <div className="col-12">
@@ -177,8 +188,10 @@ function RenderComments({ comments, postComment, dishId }) {
                 <br />
                 <br />
               </li>
-            );
-          })}
+                </Fade>
+              );
+            })}
+          </Stagger>
         </ul>
         <CommentForm dishId={dishId} postComment={postComment} />
       </React.Fragment>
