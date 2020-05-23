@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server --watch db.json -p 3001 -d 2000"
+    "start": "json-server --watch db.json -p 3001 -d 50"
   },
   "author": "",
   "license": "ISC",

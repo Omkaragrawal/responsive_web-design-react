@@ -209,6 +209,22 @@
       "comment": "fgrsfcwed",
       "date": "2020-05-12T11:28:09.973Z",
       "id": 20
+    },
+    {
+      "dishId": 1,
+      "rating": "5",
+      "author": "zdgfsdgdfg",
+      "comment": "rshdegqaerfeq rf erfwef",
+      "date": "2020-05-23T02:35:15.635Z",
+      "id": 21
+    },
+    {
+      "dishId": 1,
+      "rating": "5",
+      "author": "sgsf",
+      "comment": "htrdgb",
+      "date": "2020-05-23T03:36:29.910Z",
+      "id": 22
     }
   ],
   "promotions": [
@@ -271,6 +287,89 @@
       "message": "afadsfds",
       "date": "2017-12-04T09:41:49.890Z",
       "id": 1
+    },
+    {
+      "firstName": "OMKAR",
+      "lastName": "AGRAWAL",
+      "telNum": "9967040227",
+      "email": "omkar3654@gmail.com",
+      "message": "zdhgzdrgrf",
+      "date": "2020-05-23T03:57:16.020Z",
+      "id": 2
+    },
+    {
+      "firstName": "OMKAR",
+      "lastName": "AGRAWAL",
+      "telNum": "9967040227",
+      "email": "omkar3654@gmail.com",
+      "agree": true,
+      "message": "srfgzdrfgsrf",
+      "date": "2020-05-23T03:58:42.977Z",
+      "id": 3
+    },
+    {
+      "firstName": "OMKAR",
+      "lastName": "AGRAWAL",
+      "telNum": "9967040227",
+      "email": "omkar3654@gmail.com",
+      "agree": true,
+      "message": "srfgzdrfgsrf",
+      "date": "2020-05-23T03:58:55.116Z",
+      "id": 4
+    },
+    {
+      "firstName": "OMKAR",
+      "lastName": "AGRAWAL",
+      "telNum": "9967040227",
+      "email": "omkar3654@gmail.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "dsgvfsdfsdf",
+      "date": "2020-05-23T04:17:11.559Z",
+      "id": 5
+    },
+    {
+      "firstName": "OMKAR",
+      "lastName": "AGRAWAL",
+      "telNum": "9967040227",
+      "email": "omkar3654@gmail.com",
+      "agree": true,
+      "message": "hjjjjjjjjjjjjjjjjjjjj",
+      "date": "2020-05-23T04:18:23.324Z",
+      "id": 6
+    },
+    {
+      "firstName": "OMKAR",
+      "lastName": "AGRAWAL",
+      "telNum": "9967040227",
+      "email": "omkar3654@gmail.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "gggggggggggg",
+      "date": "2020-05-23T05:26:21.684Z",
+      "id": 7
+    },
+    {
+      "firstName": "OMKAR",
+      "lastName": "AGRAWAL",
+      "telNum": "9967040227",
+      "email": "omkar3654@gmail.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "aaaaaaaaaaaaaaaaa",
+      "date": "2020-05-23T05:30:56.626Z",
+      "id": 8
+    },
+    {
+      "firstName": "OMKAR",
+      "lastName": "AGRAWAL",
+      "telNum": "9967040225",
+      "email": "omkar3654@gmail.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "bbbbbbbbbbbbbbbbbbb",
+      "date": "2020-05-23T05:31:24.285Z",
+      "id": 9
     }
   ]
 }
